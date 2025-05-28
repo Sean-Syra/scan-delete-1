@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+     <title>Dashboard</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+ </head>
+ <body>
+     <div class="dashboard-container">
+         <nav>
+             <h1>Welcome {{ name }}</h1>
+             <a href="{{ url_for('auth.logout') }}" class="logout-btn">Logout</a>
+         </nav>
+         <div class="dashboard-content">
+             <h2>Admin Dashboard</h2>
+             <!-- Add your dashboard content here -->
+         </div>
+     </div>
+ </body>
+ </html>
